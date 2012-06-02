@@ -10,7 +10,7 @@ public class BinaryChopSpecs
 	@Test
 	public void whenAskedToFindAnElement_AndElementIsPresent_shouldReturnElementIndex()
 	{
-		sut = new BinaryChop();
+		sut = new BinaryChopIterative();
 	    assertEquals(-1, sut.chop(3, new int[]{}));
 	    assertEquals(-1, sut.chop(3, new int[]{1}));
 	    assertEquals(0,  sut.chop(1, new int[]{1}));

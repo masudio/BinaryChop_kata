@@ -1,5 +1,5 @@
 
-public class BinaryChop implements ISearchAnArray
+public class BinaryChopRecursive implements ISearchAnArray
 {
 
 	@Override
@@ -17,5 +17,4 @@ public class BinaryChop implements ISearchAnArray
 		else if(findMe > searchMe[middleIndex]) return chop(findMe,searchMe, middleIndex, currentEnd);
 		else return middleIndex;
 	}
-
 }
